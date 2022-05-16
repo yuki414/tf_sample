@@ -1,7 +1,7 @@
 resource "aws_instance" "cm-test" {
     ami = "ami-cbf90ecb"
     instance_type = "t2.micro"
-    key_name = "yuki.mf"
+    key_name = "uchiyama_key"
     vpc_security_group_ids = [
       aws_security_group.adminTF.id
     ]
